@@ -1,38 +1,42 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Champions</title>
+	<title>Race Register Form</title>
 </head>
 <body>
-	<h1>Champions</h1>
-	<table>
-		<thead>	
-			<tr>
-				<th rowspan="2">Esport</th>
-				<th rowspan="2">Developer</th>
-				<th colspan="3">Champion</th>
-			</tr>
-			<th>Dev</th>
-			<th>IEM</th>
-			<th>Dreamhack</th>
-		</thead>
-		<tbody>
-			<tr>
-				<td>Overwatch</td>
-				<td>Blizzard</td>
-				<td>Dallas</td>
-			</tr>
-			<tr>
-				<td>CS:GO</td>
-				<td>Valve</td>
-				<td>Liquid</td>
-			</tr>
-			<tr>	
-				<td>Valorant</td>
-				<td>Riot</td>
-				<td>C9</td>
-			</tr>
-		</tbody>
-	</table>
+	<h1>Race Registration!</h1>
+	<form action="confirmation">
+		<label for="first_name">First Name</label>
+		<input type="text" name="first_name" id="first_name">
+		<label for="last_name">Last Name</label>
+		<input type="text" name="last_name" id="last_name">
+
+		<h2>Select a Race:</h2>
+		<div>
+			<input type="radio" name="race_type" id="5k">
+			<label for="race_type">Fun run 5k</label><br>
+			<input type="radio" name="race_type" id="half">
+			<label for="half">Half Marathon</label><br>
+			<input type="radio" name="race_type" id="full">
+			<label for="full">Full Marathon</label>
+		</div>
+		<div>
+			<label for="email">Email</label>
+			<input type="email" name="email" id="email">
+			<label for="password">Password</label>
+			<input type="password" name="password" id="password">
+		</div>
+		<div>
+			<label for="age">Select Age Group</label>
+			<select id="age" name="age">
+				<option value="under18">under 18</option>
+				<option value="young">18 - 30</option>
+				<option value="mid">30 - 50</option>
+				<option value="senior">50+</option>
+			</select>
+		</div>
+		<button>Register!</button>
+	</form>
+
 </body>
 </html>
