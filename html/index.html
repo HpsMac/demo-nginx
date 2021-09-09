@@ -1,12 +1,132 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>Este no es el titulo correcto </title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<title>Intel Dashboard Demo</title>
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no'
+		name='viewport' />
+	<link rel="stylesheet" href="static/css/bootstrap.min.css">
+	<link rel="stylesheet" href="static/css/ready.css">
+	<script src="static/js/core/jquery.min.js"></script>
+	<script src="static/js/core/Chart.min.js"></script>
+	<script type='text/javascript' src='https://www.gstatic.com/charts/loader.js'></script>
 </head>
+
 <body>
-	<h1>Holiii ha llegado el matriarcado</h1>
-	sin preguntar por favor
-
-
+	<div class="wrapper">
+		<div class="main-header">
+			<div class="logo-header">
+				<a href="/" class="logo">
+					Dashboard
+				</a>
+				<button class="navbar-toggler sidenav-toggler ml-auto" type="button" data-toggle="collapse"
+					data-target="collapse" aria-controls="sidebar" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<button class="topbar-toggler more"><i class="la la-ellipsis-v"></i></button>
+			</div>
+			<nav class="navbar navbar-header navbar-expand-lg">
+				<div class="container-fluid">
+					<ul class="navbar-nav topbar-nav ml-md-auto align-items-center">
+						<li class="nav-item dropdown hidden-caret">
+							<div class="nav-link dropdown-toggle">
+								Septiember 9th, 2021.							</div>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+		<div class="sidebar">
+			<div class="scrollbar-inner sidebar-wrapper">
+				<ul class="nav">
+					<li class="nav-item active">
+						<a href="/">
+							<i class="la la-dashboard"></i>
+							<p>Dashboard</p>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="main-panel">
+			<div class="content">
+				<div class="container-fluid">
+					<h4 class="page-title">Dashboard</h4>
+					<div class="row">
+						<div class="col-md-6">
+							<div class="card">
+								<div class="card-header">
+									<h4 class="card-title">Sensor 1</h4>
+									<p class="card-category">Gas CO</p>
+								</div>
+								<div class="card-body">
+									<div class="chart-circle mt-4 mb-3">
+										<div id="sensor1" style="width: 900px; height: 500px;"></div>
+									</div>
+								</div>
+								<div class="card-footer">
+									<div class="legend"><i class="la la-circle text-primary"></i> Completed</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="card">
+								<div class="card-header">
+									<h4 class="card-title">Sensor 2</h4>
+									<p class="card-category">Gas CO2</p>
+								</div>
+								<div class="card-body">
+									<div class="chart-circle mt-4 mb-3">
+										<div id="sensor2" style="width: 900px; height: 500px;"></div>
+									</div>
+								</div>
+								<div class="card-footer">
+									<div class="legend"><i class="la la-circle text-primary"></i> Completed</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6">
+							<div class="card">
+								<div class="card-header">
+									<h4 class="card-title">Metrics</h4>
+									<p class="card-category">Sensor Temperature</p>
+								</div>
+								<div class="card-body">
+									<div class="chart-circle mt-4 mb-3">
+										<div id="chart_div2" style="width: 900px; height: 500px;"></div>
+									</div>
+								</div>
+								<div class="card-footer">
+									<div class="legend"><i class="la la-circle text-primary"></i> Completed</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="card">
+								<div class="card-header">
+									<h4 class="card-title">Metrics</h4>
+									<p class="card-category">Historial</p>
+								</div>
+								<div class="card-body">
+									<div class="chart-circle mt-4 mb-3">
+										<div id="chart_div" style="width: 900px; height: 500px;"></div>
+									</div>
+								</div>
+								<div class="card-footer">
+									<div class="legend"><i class="la la-circle text-primary"></i> Completed</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+	<script src="static/js/plugin/demo.js"></script>
 </body>
+
 </html>
